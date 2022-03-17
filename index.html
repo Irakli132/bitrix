@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="../форма/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="first-div">
+            <h1>Форма обратной связи</h1>
+            <form action='../форма/func.php' method="post">
+        <div class="second-div">
+            <label>Имя</label>
+            <br>
+            <input name="name" type="text" required>
+        </div>
+
+        <div class="second-div">
+            <label>Фамилия</label>
+            <br>
+            <input name="surnname" type="text" required>
+        </div>
+
+        <div class="second-div">
+            <label>Email</label>
+            <br>
+            <input name="email" type="email" required>
+        </div>
+
+        <div class="second-div">
+            <label>Дата рождения</label>
+            <br>
+            <input name="date" type="date" required>
+        </div>
+
+        <div class="second-div">
+            <label>Номер Телефона</label>
+            <br>
+            <input name="phone" type="tel"  required>
+        </div>
+
+        <div class="second-div">
+            <label>Город</label>
+            <br>
+            <input name="address" type="text" required>
+        </div>
+        <br>
+        <input value="Submit" id="btn" type="submit">
+    </form>
+    </div>
+
+</body>
+</html>
